@@ -2,9 +2,10 @@
 
 > Template is a quick starter kit project to build a complete web app and API.
 
-![Home](screenshots/template-home.png)
+You can access the production version of the app here:
 
-![Home Dark](screenshots/template-home-dark.png)
+- [Template Web](https://template.azobu.com)
+- [Template API](https://api.template.azobu.com)
 
 ## Repositories
 
