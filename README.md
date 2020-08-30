@@ -2,12 +2,22 @@
 
 > Template is a quick starter kit project to build a complete web app and API.
 
-You can access the production version of the app here:
+You can access the production version of the applications here:
 
 - [Template Web](https://template.azobu.com)
 - [Template API](https://api.template.azobu.com)
 - (Later) Template Android
 - (Later) Template iOS
+
+## Table of Contents
+
+- Introduction
+- [Highlighted Features](#highlighted-features)
+- [Repositories](#repositories)
+- [Inspirations](#inspirations)
+- [Designs](#designs)
+- [Authors](#authors)
+- [License](#license)
 
 ## Highlighted Features
 
@@ -43,7 +53,8 @@ You can access the production version of the app here:
 - Easy to use database technologies
   - Powered by MongoDB with Mongoose or PostgreSQL with Sequelize
 - Simple user authentication and authorization flow with basic security
-  - Powered by Web Storage API, Express, `bcrypt`, and JSON Web Token (JWT), Express CORS and Helmet
+  - Powered by Web Storage API, Express, `bcrypt`, and JSON Web Token (JWT), Express CORS, and Helmet
+  - Not using Passport for basic email and password
 - Proper response of message and error
   - Using Express middlewares with advised HTTP response status
 - Edit user profile and upload pictures
@@ -67,22 +78,21 @@ You can access the production version of the app here:
 - Automated test suite with end-to-end test, integration test, unit test, and test coverage
   - (Later) Powered by Cypress, Jest, Sinon, React Testing Library, and `supertest`/`supertest-fetch`
 - Send email for account confirmation and password reset link
-  - Powered by Mailgun and Nodemailer
-  - (Alternative) Other mail services:
-    - Amazon SES
-    - Postmark
+  - Powered by Nodemailer and Mailgun
 - Interactive documentation of the API endpoints
   - (Later) Powered by Postman/`newman`, Swagger, or API Blueprint
 - Reliable secure server hosting and configuration
   - Powered by Netlify, Google Cloud Platform, Nginx, Let's Encrypt, Cloudflare, and Uniregistry
 - Intuitive CI/CD (Continuous Integration and Deployment) tools
   - Powered by Netlify CI and Circle CI
-- Spring cleaning and vulnerability monitoring
-  - (Later) Powered by Greenkeeper and Snyk
-- Offline-first mode
-  - (Later) Powered by Progressive Web App (PWA)
+- (Later) Dedicated administrator dashboard for data management and visualization
+  - Powered by D3.js
+- (Later) Periodic dependency cleaning and vulnerability monitoring by Greenkeeper and Snyk
+- (Later) Offline-first mode powered by Progressive Web App (PWA)
 - (Later) Consultation with the developers
 - (Later) Explanation with videos
+
+Some stack alternatives are listed in each repository's documentation.
 
 ## Repositories
 
