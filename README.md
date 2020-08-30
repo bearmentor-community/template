@@ -31,7 +31,7 @@ Then other things such as documentation and design here:
 
 ## Inspirations
 
-This project is inspired by:
+Template project is inspired by:
 
 - [Material Design Kit](https://materialdesignkit.com)
 - [RealWorld.io](https://github.com/gothinkster/realworld)
@@ -40,26 +40,29 @@ This project is inspired by:
 - [React.js Boilerplate](https://reactboilerplate.com)
 - [Express application generator](https://expressjs.com/en/starter/generator.html)
 
-But instead of taking different programming ecosystem at once, Template is made to be highly opiniated for just around JavaScript and Node.js because the main goal is to be a quick starter kit.
+Instead of taking different programming ecosystem at once, Template is made to be highly opiniated for just around JavaScript and Node.js because the main goal is to be a quick starter kit for new professional developers.
 
-Ultimately this base application is adapted into other apps:
+Ultimately this base application is adapted into other sites and apps:
 
-- [The Galactic News](https://thegalacticnews.azobu.com) news portal
-- [Earthling](https://earthling.azobu.com) social media
-- [Planetary](https://planetary.azobu.com) job board
-- [Jankenpon](https://jankenpon.azobu.com) rock-paper-scissors game
-
-Actively updated too during 2020, unlike the others which already stopped more than 2 years.
+- ⭐ [Azobu](https://azobu.com) learning platform
+- 🗼 [Acme](https://acme.azobu.com) company profile
+- 📝 [Yesdo](https://yesdo.azobu.com) task tracking and note taking
+- 📞 [Connecto](https://connecto.azobu.com) contact and address book manager
+- 🌌 [The Galactic News](https://thegalacticnews.azobu.com) news portal
+- 🌏 [Earthling](https://earthling.azobu.com) social media
+- 🪐 [Planetary](https://planetary.azobu.com) job board
+- 👋 [Jankenpon](https://jankenpon.azobu.com) rock-paper-scissors game
+- [and much more](https://azobu.com/projects)
 
 ## Features
 
 - Highly opiniated structure to start a project faster
-  - Focused on JavaScript, Node.js, and React ecosystem
+  - Focused on JavaScript, Node.js, React, and Express ecosystem
   - Later possible with TypeScript too
 - Simple user interface (UI) and quick user experience (UX)
   - Powered by Figma, React, React Router, and Redux
-  - Albeit the opiniated specification, Template want to focus on the end-user experience
-  - Adapting from apps like Twitter and Instagram
+  - Albeit the opiniated specification, Template want to focus on good end-user experience
+  - Adapting inspirations from apps like Twitter and Instagram
 - Encouraged with popular best practices and recommendations
   - Intuitive React Redux structure
   - Intuitive Express middleware structure
@@ -102,7 +105,7 @@ Actively updated too during 2020, unlike the others which already stopped more t
   - Not using Passport for basic email and password
 - Proper response of message and error
   - Using Express middlewares with advised HTTP response status
-- Edit user profile and upload pictures
+- Edit user profile and upload files/images
   - Powered by `multer` Express middleware using `FormData`
   - (Alternative) Separated storage engine for static assets:
     - Google Storage Engine
@@ -129,9 +132,9 @@ Actively updated too during 2020, unlike the others which already stopped more t
   - (Later) Powered by Cypress, Jest, Sinon, React Testing Library, and `supertest`/`supertest-fetch`
 - Reliable secure server hosting and configuration, with HTTPS
   - Powered by Netlify, Google Cloud Platform, Nginx, Let's Encrypt, Cloudflare, and Uniregistry
-- Intuitive CI/CD tools
+- Intuitive CI/CD tools to manage deployment process
   - Powered by Netlify CI and Circle CI
-- (Later) Pagination on both web and API
+- (Later) Pagination and indexing on client and server side
 - (Later) Dedicated administrator dashboard for data management and visualization
   - Powered by D3.js
 - (Later) Periodic dependency cleaning and vulnerability monitoring by Greenkeeper and Snyk

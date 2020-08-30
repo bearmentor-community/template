@@ -88,7 +88,7 @@ Endpoints are configured using Express middlewares.
   "name": "M Haidar Hanif",
   "username": "mhaidarhanif",
   "email": "name@example.com",
-  "bio": "Educator, Engineer, Explorer. Write everything education and tech.",,
+  "bio": "Educator, Engineer, Explorer. Write everything education and tech.",
   "links": [
     {
       "title": "Website",
