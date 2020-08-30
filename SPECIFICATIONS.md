@@ -1,6 +1,12 @@
-# Specifications
+# Template Spec
+
+Specifications for all of the web application and API.
 
 ## Web Pages
+
+Pages are configured using React Router.
+
+### Web
 
 | Path           | Component         | Description         | Environment   |
 | -------------- | ----------------- | ------------------- | ------------- |
@@ -10,7 +16,7 @@
 | `/users`       | `PageUsers`       | All users           |               |
 | `/:slug`       | `PageUserProfile` | Single user profile |               |
 | `/items`       | `PageItems`       | All items           |               |
-| `/items/:slug` | `PageItemDetail`  | Single item detail  |               |
+| `/items/:slug` | `PageItem`        | Single item detail  |               |
 | `/register`    | `PageRegister`    | Register new user   |               |
 | `/login`       | `PageLogin`       | Login user          |               |
 | `/logout`      | `PageLogout`      | Logout user         |               |
@@ -18,11 +24,28 @@
 | `/debug`       | `PageDebug`       | Debug mode          | `development` |
 | `/upload`      | `PageUpload`      | Upload mode         | `development` |
 
+### Admin
+
+| Path               | Component      | Description       | Environment |
+| ------------------ | -------------- | ----------------- | ----------- |
+| `/`                | `PageHome`     | Home              |             |
+| `/404`             | `PageNotFound` | Not found         |             |
+| `/users`           | `PageUsers`    | All users         |             |
+| `/users/:username` | `PageUser`     | Single user info  |             |
+| `/items`           | `PageItems`    | All items         |             |
+| `/items/:slug`     | `PageItem`     | Single item info  |             |
+| `/images`          | `PageImages`   | All images        |             |
+| `/images/:slug`    | `PageImage`    | Single image info |             |
+| `/login`           | `PageLogin`    | Login user        |             |
+| `/logout`          | `PageLogout`   | Logout user       |             |
+
 ## API Endpoints
 
-| Endpoint | Method | Description | Query | Headers |
-| -------- | ------ | ----------- | ----- | ------- |
-| `/`      | `GET`  | Get index   | -     | -       |
+Endpoints are configured using Express middlewares.
+
+| Endpoint | Method | Description         | Query | Headers |
+| -------- | ------ | ------------------- | ----- | ------- |
+| `/`      | `GET`  | Get root of the API | -     | -       |
 
 ### Auth
 
@@ -34,21 +57,21 @@
 
 ### Users
 
-| Endpoint | Method | Description   | Query       | Headers |
-| -------- | ------ | ------------- | ----------- | ------- |
-| `/users` | `GET`  | Get all users | `paginated` | -       |
+| Endpoint | Method | Description   | Query | Headers |
+| -------- | ------ | ------------- | ----- | ------- |
+| `/users` | `GET`  | Get all users | -     | -       |
 
 ### Items
 
-| Endpoint | Method | Description   | Query       | Headers |
-| -------- | ------ | ------------- | ----------- | ------- |
-| `/items` | `GET`  | Get all items | `paginated` | -       |
+| Endpoint | Method | Description   | Query | Headers |
+| -------- | ------ | ------------- | ----- | ------- |
+| `/items` | `GET`  | Get all items | -     | -       |
 
 ### Images
 
-| Endpoint  | Method | Description    | Query       | Headers |
-| --------- | ------ | -------------- | ----------- | ------- |
-| `/images` | `GET`  | Get all images | `paginated` | -       |
+| Endpoint  | Method | Description    | Query | Headers |
+| --------- | ------ | -------------- | ----- | ------- |
+| `/images` | `GET`  | Get all images |       | -       |
 
 ## Data Structure
 
