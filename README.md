@@ -2,6 +2,10 @@
 
 > [Template](https://github.com/azobu-projects/template) is a quick starter kit project to build a complete web app and API with highly opiniated technologies and structure around JavaScript ecosystem.
 
+| Web                                   | API                                  |
+| ------------------------------------- | ------------------------------------ |
+| ![Web](screenshots/template-home.jpg) | ![API](screenshots/template-api.jpg) |
+
 ## Table of Contents
 
 - Introduction
@@ -14,7 +18,7 @@
 
 ## Links
 
-You can access the production version of the applications here with their corresponding repositories:
+Access to the production version of the applications with their corresponding repositories:
 
 - [Template Web](https://template.azobu.com)
   - [`template-web`](https://github.com/azobu-projects/template-web)
@@ -23,7 +27,7 @@ You can access the production version of the applications here with their corres
 - (Later) Template Android
 - (Later) Template iOS
 
-Then other things such as documentation and design here:
+Other things such as documentation and design:
 
 - [Template Spec](SPECIFICATIONS.md)
 - [Template Design](https://figma.com/file/gyEXMrNXwVEBfdrSkJlJYV/Template?node-id=450%3A2)
@@ -75,14 +79,14 @@ Ultimately this base application is adapted into other sites and apps:
 - Frontend and backend documentations
   - Leveraged by simple table for web pages and API endpoints
 - Interactive documentation of the API endpoints
-  - (Later) Powered by Postman/`newman`, Swagger, or API Blueprint
+  - (Later) Powered by Postman, Swagger, and API Blueprint
 - Optimized developer experience (DX) through npm/yarn scripts
   - Leveraged by `package.json` and PM2 with `ecosystem.config.js`
   - Automated deployment by Netlify and Circle CI
 - Watch changes with hot reload for React and auto restart for Node.js
   - Powered by React Scripts (Webpack and Babel), Nodemon, and PM2
 - Flexible customizable interface with color theme, especially dark mode
-  - Powered by `xstyled` and Emotion
+  - Powered by `styled-system`, `xstyled`, and `emotion`
   - Not using premade design such as Bootstrap or Material Design
 - Better debugging experience for global app state and local form state
   - Powered by Redux Logger, Redux DevTools Extension, and React Hook Form
@@ -96,13 +100,14 @@ Ultimately this base application is adapted into other sites and apps:
   - Powered by combination of Redux, React Router, and `query-string`
 - Authentic and cool-looking initial seed users and items
   - Sourced from Marvel universe's characters and items
-- Log HTTP API requests
-  - Powered by `morgan` Express middleware
+  - Not using fake data generator
 - Easy to use database technologies
   - Powered by MongoDB with Mongoose or PostgreSQL with Sequelize
 - Simple user authentication and authorization flow with basic security
-  - Powered by Web Storage API, Cookie, `bcrypt`, JSON Web Token (JWT), CORS, and Helmet
+  - Powered by Web Storage API, HTTP Cookie, `bcrypt`, JSON Web Token (JWT), CORS, and Helmet
   - Not using Passport for basic email and password
+- Log HTTP API requests
+  - Powered by `morgan` Express middleware
 - Proper response of message and error
   - Using Express middlewares with advised HTTP response status
 - Edit user profile and upload files/images
@@ -135,13 +140,17 @@ Ultimately this base application is adapted into other sites and apps:
 - Intuitive CI/CD tools to manage deployment process
   - Powered by Netlify CI and Circle CI
 - (Later) Pagination and indexing on client and server side
+- (Later) Remote data caching
+  - Powered by React Query or SWR
 - (Later) Dedicated administrator dashboard for data management and visualization
   - Powered by D3.js
 - (Later) Periodic dependency cleaning and vulnerability monitoring by Greenkeeper and Snyk
 - (Later) Support for Geolocation API
 - (Later) Support for Payment Gateway
   - Powered by Stripe, Braintree, PayPal, or Midtrans
-- (Later) Offline-first mode powered by Progressive Web App (PWA)
+- (Later) Real-time full text search
+  - Powered by Algolia or Elasticsearch
+- (Later) Offline-first mode powered by Progressive Web App (PWA) approach
 - (Later) Consultation with the developers
 - (Later) Explanation with videos
 
