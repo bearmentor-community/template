@@ -1,10 +1,29 @@
-# Template Spec
+# Template Specifications
 
 Specifications for all of the web application and API.
 
+## Table of Contents
+
+- Introduction
+- [Tech Stack](#tech-stack)
+- [Web Pages](#web-pages)
+- [Data Structure](#data-structure)
+
+## Tech Stack
+
+- HTML, CSS, JavaScript
+- Node.js
+- React
+- Redux
+- Express
+- MongoDB
+- PostgreSQL
+- Nginx
+- PM2
+
 ## Web Pages
 
-Pages are configured using React Router.
+Pages are configured using React Router and integrated into Redux with Connected React Router.
 
 ### Web
 
@@ -41,37 +60,62 @@ Pages are configured using React Router.
 
 ## API Endpoints
 
-Endpoints are configured using Express middlewares.
+Endpoints are configured using Express middlewares. Each of them could configured with either:
 
-| Endpoint | Method | Description         | Query | Headers |
-| -------- | ------ | ------------------- | ----- | ------- |
-| `/`      | `GET`  | Get root of the API | -     | -       |
+- Mongoose models that connected to MongoDB
+- Sequelize models that connected to PostgreSQL or MySQL
+
+### Common
+
+| Endpoint | Method   | Description         | Params | Query             | Headers | Available |
+| -------- | -------- | ------------------- | ------ | ----------------- | ------- | --------- |
+| `/`      | `GET`    | Get welcome message | -      | -                 | -       | YES       |
+| `/`      | `DELETE` | Reset everything    | -      | `resetEverything` | -       | YES       |
 
 ### Auth
 
-| Endpoint         | Method | Description       | Query | Headers         |
-| ---------------- | ------ | ----------------- | ----- | --------------- |
-| `/auth/register` | `POST` | Register new user | -     | -               |
-| `/auth/login`    | `POST` | Login to user     | -     | -               |
-| `/auth/logout`   | `GET`  | Logout from user  | -     | `Authorization` |
+| Endpoint         | Method | Description                    | Params | Query | Headers         | Available |
+| ---------------- | ------ | ------------------------------ | ------ | ----- | --------------- | --------- |
+| `/auth/register` | `POST` | Register new user              | -      | -     | -               | YES       |
+| `/auth/login`    | `POST` | Login to user                  | -      | -     | -               | YES       |
+| `/auth/logout`   | `GET`  | Logout from user               | -      | -     | `Authorization` | YES       |
+| `/auth/profile`  | `GET`  | Get authenticated user profile | -      | -     | `Authorization` | YES       |
 
 ### Users
 
-| Endpoint | Method | Description   | Query | Headers |
-| -------- | ------ | ------------- | ----- | ------- |
-| `/users` | `GET`  | Get all users | -     | -       |
+| Endpoint              | Method   | Description                | Params     | Query | Headers     | Available |
+| --------------------- | -------- | -------------------------- | ---------- | ----- | ----------- | --------- |
+| `/users`              | `GET`    | Get all users              | -          | -     | -           | YES       |
+| `/users/seed`         | `POST`   | Seed initial users         | -          | -     | `X-API-Key` | YES       |
+| `/users/count`        | `GET`    | Get count of all users     | -          | -     | -           | YES       |
+| `/users/:username`    | `GET`    | Get user by username       | `username` | -     | -           | YES       |
+| `/users/:id/settings` | `GET`    | Get user settings by id    | `id`       | -     | -           | YES       |
+| `/users/:id/settings` | `PUT`    | Update user settings by id | `id`       | -     | -           | YES       |
+| `/users`              | `DELETE` | Delete all users           | -          | -     | -           | YES       |
+| `/users/:id`          | `DELETE` | Delete user by id          | `id`       | -     | -           | YES       |
 
 ### Items
 
-| Endpoint | Method | Description   | Query | Headers |
-| -------- | ------ | ------------- | ----- | ------- |
-| `/items` | `GET`  | Get all items | -     | -       |
+| Endpoint       | Method   | Description        | Params | Query | Headers | Available |
+| -------------- | -------- | ------------------ | ------ | ----- | ------- | --------- |
+| `/items`       | `GET`    | Get all items      | -      | -     | -       | YES       |
+| `/items/seed`  | `POST`   | Seed initial items | -      | -     | -       | YES       |
+| `/items/:slug` | `GET`    | Get item by slug   | `slug` | -     | -       | YES       |
+| `/items`       | `DELETE` | Delete all items   | -      | -     | -       | YES       |
 
 ### Images
 
-| Endpoint  | Method | Description    | Query | Headers |
-| --------- | ------ | -------------- | ----- | ------- |
-| `/images` | `GET`  | Get all images |       | -       |
+| Endpoint         | Method | Description      | Params | Query | Headers         | Available |
+| ---------------- | ------ | ---------------- | ------ | ----- | --------------- | --------- |
+| `/images`        | `GET`  | Get all images   | -      | -     | -               | -         |
+| `/images/upload` | `POST` | Upload new image | -      | -     | `Authorization` | YES       |
+
+### Search
+
+| Endpoint        | Method | Description           | Params | Query     | Headers | Available |
+| --------------- | ------ | --------------------- | ------ | --------- | ------- | --------- |
+| `/search`       | `GET`  | Get root of search    | -      | -         | -       | -         |
+| `/search/items` | `GET`  | Search items by query | -      | `keyword` | -       | YES       |
 
 ## Data Structure
 
