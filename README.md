@@ -1,10 +1,10 @@
-# ⭕ Template
+# ⭕ [Template](https://template.azobu.com)
 
 > [Template](https://github.com/azobu-projects/template) is a quick starter kit project to build a complete web app and API with highly opiniated technologies and structure around JavaScript ecosystem.
 
-| Web                                   | API                                  |
-| ------------------------------------- | ------------------------------------ |
-| ![Web](screenshots/template-home.jpg) | ![API](screenshots/template-api.jpg) |
+| Web                                                                 | API                                                                    |
+| ------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| [![Web](screenshots/template-home.jpg)](https://template.azobu.com) | [![API](screenshots/template-api.jpg)](<(https://template.azobu.com)>) |
 
 ## Table of Contents
 
@@ -33,6 +33,18 @@ Other things such as documentation and design:
 - [Template Design](https://figma.com/file/gyEXMrNXwVEBfdrSkJlJYV/Template?node-id=450%3A2)
 - [Template Prototype](https://figma.com/proto/gyEXMrNXwVEBfdrSkJlJYV/Template?node-id=452%3A2&scaling=min-zoom)
 
+Ultimately this base application can be adapted into other sites and apps:
+
+- ⭐ [Azobu](https://azobu.com) learning platform
+- 🗼 [Acme](https://acme.azobu.com) company profile
+- 📝 [Yesdo](https://yesdo.azobu.com) task tracking and note taking
+- 📞 [Connecto](https://connecto.azobu.com) contact and address book manager
+- 🌌 [The Galactic News](https://thegalacticnews.azobu.com) news portal
+- 🌏 [Earthling](https://earthling.azobu.com) social media
+- 🪐 [Planetary](https://planetary.azobu.com) job board
+- 👋 [Jankenpon](https://jankenpon.azobu.com) rock-paper-scissors game
+- [and much more](https://azobu.com/projects)
+
 ## Inspirations
 
 Template project is inspired by:
@@ -46,17 +58,7 @@ Template project is inspired by:
 
 Instead of taking different programming ecosystem at once, Template is made to be highly opiniated for just around JavaScript and Node.js because the main goal is to be a quick starter kit for new professional developers.
 
-Ultimately this base application is adapted into other sites and apps:
-
-- ⭐ [Azobu](https://azobu.com) learning platform
-- 🗼 [Acme](https://acme.azobu.com) company profile
-- 📝 [Yesdo](https://yesdo.azobu.com) task tracking and note taking
-- 📞 [Connecto](https://connecto.azobu.com) contact and address book manager
-- 🌌 [The Galactic News](https://thegalacticnews.azobu.com) news portal
-- 🌏 [Earthling](https://earthling.azobu.com) social media
-- 🪐 [Planetary](https://planetary.azobu.com) job board
-- 👋 [Jankenpon](https://jankenpon.azobu.com) rock-paper-scissors game
-- [and much more](https://azobu.com/projects)
+> 🚧 TypeScript and Deno might be later
 
 ## Features
 

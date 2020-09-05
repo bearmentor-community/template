@@ -21,6 +21,8 @@ Specifications for all of the web application and API.
 - Nginx
 - PM2
 
+> 🚧 TypeScript and Deno might be later
+
 ## Web Pages
 
 Pages are configured using React Router and integrated into Redux with Connected React Router.
