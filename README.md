@@ -62,26 +62,28 @@ Instead of taking different programming ecosystem at once, Template is made to b
 
 ## Features
 
+### Current Features
+
 - Highly opiniated structure to start a project faster
   - Focused on JavaScript, Node.js, React, and Express ecosystem
   - Later possible with TypeScript too
-- Simple user interface (UI) and quick user experience (UX)
-  - Powered by Figma, React, React Router, and Redux
-  - Albeit the opiniated specification, Template want to focus on good end-user experience
-  - Adapting inspirations from apps like Twitter and Instagram
+- Simple and good-looking user interface (UI) and quick user experience (UX)
+  - Powered by Figma, React, React Router, Redux, and CSS-in-JS
+  - Albeit the opiniated specification, Template make the best use of good end-user experience
+  - Adapting inspirations from apps like Google, Twitter, Instagram, Medium, and Airbnb
 - Encouraged with popular best practices and recommendations
   - Intuitive React Redux structure
-  - Intuitive Express middleware structure
+  - Intuitive Express structure
   - Clean Code
   - The Twelve-Factor App
   - Continuous Integration and Deployment (CI/CD)
-  - Only use necessary abstraction
 - Communication with popular and standard HTTP-based API
   - Powered by REST API. Maybe later by GraphQL API too
 - Frontend and backend documentations
   - Leveraged by simple table for web pages and API endpoints
 - Interactive documentation of the API endpoints
-  - (Later) Powered by Postman, Swagger, and API Blueprint
+  - Powered by Postman
+  - (Alternative) Swagger or API Blueprint
 - Optimized developer experience (DX) through npm/yarn scripts
   - Leveraged by `package.json` and PM2 with `ecosystem.config.js`
   - Automated deployment by Netlify and Circle CI
@@ -92,7 +94,7 @@ Instead of taking different programming ecosystem at once, Template is made to b
   - Not using premade design such as Bootstrap or Material Design
 - Better debugging experience for global app state and local form state
   - Powered by Redux Logger, Redux DevTools Extension, and React Hook Form
-  - (Alternative) Added by Formik or React Final Form
+  - (Alternative) Formik or React Final Form
 - Get and display data resources such as users and items
   - Powered by Axios, Redux Thunk, and `async`/`await` for asynchronous handling
   - Using standardized names of action types
@@ -122,41 +124,46 @@ Instead of taking different programming ecosystem at once, Template is made to b
 - Helpful analytical data tracking
   - Powered by Google Analytics and React-GA
 - Vibrant utilities for various case of other features:
-  - `dayjs` date parser
-  - Image or component lazy loader
-  - HTML string parser
-  - WYSIWYG editor
-  - (Later) Markdown editor
-  - (Later) Code syntax highlighter
-- Send email for registration confirmation and password reset link
-  - (Later) Powered by Nodemailer and Mailgun
-- Application monitoring with error and log tracking
-  - (Later) Powered by Sentry and LogRocket
+  - `dayjs` date parser on `datetime`
+  - Image or component lazy loader on `img`
+  - HTML string parser on raw HTML data
+  - WYSIWYG editor to generate raw HTML data
+  - Code syntax highlighter on `pre` with `code`
+  - (Alternative) Markdown editor and parser
 - Consistent code quality using static test linter and code formatter
   - Powered by ESLint, Prettier, and Standard
   - Encouraging to use `prop-types` in React
-- Automated test suite with end-to-end test, integration test, unit test, and test coverage
-  - (Later) Powered by Cypress, Jest, Sinon, React Testing Library, and `supertest`/`supertest-fetch`
 - Reliable secure server hosting and configuration, with HTTPS
   - Powered by Netlify, Google Cloud Platform, Nginx, Let's Encrypt, Cloudflare, and Uniregistry
 - Intuitive CI/CD tools to manage deployment process
   - Powered by Netlify CI and Circle CI
-- (Later) Pagination and indexing on client and server side
-- (Later) Remote data caching
-  - Powered by React Query or SWR
-- (Later) Dedicated administrator dashboard for data management and visualization
-  - Powered by D3.js
-- (Later) Periodic dependency cleaning and vulnerability monitoring by Greenkeeper and Snyk
-- (Later) Support for Geolocation API
-- (Later) Support for Payment Gateway
-  - Powered by Stripe, Braintree, PayPal, or Midtrans
-- (Later) Real-time full text search
-  - Powered by Algolia or Elasticsearch
-- (Later) Offline-first mode powered by Progressive Web App (PWA) approach
-- (Later) Consultation with the developers
-- (Later) Explanation with videos
+- Send email for registration confirmation and password reset link
+  - Powered by Nodemailer and Mailgun
+- Application monitoring with error and log tracking
+  - Powered by Sentry and LogRocket
 
 Some stack alternatives are listed in each repository's documentation.
+
+### Later Features
+
+- Automated test suite with end-to-end test, integration test, unit test, and test coverage
+  - Powered by Cypress, Jest, Sinon, React Testing Library, and `supertest`/`supertest-fetch`
+- Pagination and indexing on client and server side
+- Remote data caching
+  - Powered by React Query or SWR
+- Dedicated administrator dashboard for data management and visualization
+  - Powered by D3.js
+- Periodic dependency cleaning and vulnerability monitoring by Greenkeeper and Snyk
+- Support for Geolocation API
+- Support for payment gateway
+  - Powered by Stripe, Braintree, PayPal, or Midtrans
+- Real-time full text search
+  - Powered by Algolia or Elasticsearch
+- Offline-first mode powered by Progressive Web App (PWA) approach
+- Role-based access control (RBAC)
+  - Powered by CASL
+- Consultation with the developers
+- Explanation with videos
 
 ## Designs
 
