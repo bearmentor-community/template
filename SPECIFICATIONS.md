@@ -5,12 +5,43 @@ Specifications for all of the web application and API.
 ## Table of Contents
 
 - Introduction
+- [Use Cases](#use-cases)
 - [Tech Stack](#tech-stack)
 - [Web Pages](#web-pages)
 - [Data Structure](#data-structure)
 
+## Use Cases
+
+- Main contents
+  - View home page content
+  - View about page content
+  - View all users
+  - View user profile
+  - View all items
+  - View item detail
+  - Search items with keyword
+- Authentication and authorization
+  - Register new user with name, username, email, and password
+  - Login to user with email and password
+  - Logout from logged in user with confirmation
+  - Request to reset password using email
+- User account
+  - Update user settings to change name, username, and bio
+  - Upload new profile picture or avatar
+  - Delete user account
+  - Post new item
+- Development mode
+  - Not found page
+  - Upload single file or multiple files
+  - Debug JSON data from API, for use of Redux and Redux Thunk
+- Utilities
+  - Toggle color mode (default and dark)
+  - Switch between register and login from each page
+
 ## Tech Stack
 
+- Markdown
+- Miro, Whimsical, Figma
 - HTML, CSS, JavaScript
 - Node.js
 - React
@@ -21,7 +52,7 @@ Specifications for all of the web application and API.
 - Nginx
 - PM2
 
-> 🚧 TypeScript and Deno might be later
+> 🚧 TypeScript and Deno might come later
 
 ## Web Pages
 
@@ -31,34 +62,34 @@ Pages are configured using React Router and integrated into Redux with Connected
 
 | Path           | Component         | Description         | Environment   |
 | -------------- | ----------------- | ------------------- | ------------- |
-| `/`            | `PageHome`        | Home                |               |
-| `/404`         | `PageNotFound`    | Not found           |               |
-| `/about`       | `PageAbout`       | About               |               |
-| `/users`       | `PageUsers`       | All users           |               |
-| `/:slug`       | `PageUserProfile` | Single user profile |               |
-| `/items`       | `PageItems`       | All items           |               |
-| `/items/:slug` | `PageItem`        | Single item detail  |               |
-| `/register`    | `PageRegister`    | Register new user   |               |
-| `/login`       | `PageLogin`       | Login user          |               |
-| `/logout`      | `PageLogout`      | Logout user         |               |
-| `/settings`    | `PageSettings`    | User settings       |               |
-| `/debug`       | `PageDebug`       | Debug mode          | `development` |
+| `/`            | `PageHome`        | Home                | -             |
+| `/about`       | `PageAbout`       | About               | -             |
+| `/users`       | `PageUsers`       | All users           | -             |
+| `/:slug`       | `PageUserProfile` | Single user profile | -             |
+| `/items`       | `PageItems`       | All items           | -             |
+| `/items/:slug` | `PageItem`        | Single item detail  | -             |
+| `/register`    | `PageRegister`    | Register new user   | -             |
+| `/login`       | `PageLogin`       | Login user          | -             |
+| `/logout`      | `PageLogout`      | Logout user         | -             |
+| `/settings`    | `PageSettings`    | User settings       | -             |
+| `/404`         | `PageNotFound`    | Not found           | `development` |
 | `/upload`      | `PageUpload`      | Upload mode         | `development` |
+| `/debug`       | `PageDebug`       | Debug mode          | `development` |
 
 ### Admin
 
 | Path               | Component      | Description       | Environment |
 | ------------------ | -------------- | ----------------- | ----------- |
-| `/`                | `PageHome`     | Home              |             |
-| `/404`             | `PageNotFound` | Not found         |             |
-| `/users`           | `PageUsers`    | All users         |             |
-| `/users/:username` | `PageUser`     | Single user info  |             |
-| `/items`           | `PageItems`    | All items         |             |
-| `/items/:slug`     | `PageItem`     | Single item info  |             |
-| `/images`          | `PageImages`   | All images        |             |
-| `/images/:slug`    | `PageImage`    | Single image info |             |
-| `/login`           | `PageLogin`    | Login user        |             |
-| `/logout`          | `PageLogout`   | Logout user       |             |
+| `/`                | `PageHome`     | Home              | -           |
+| `/404`             | `PageNotFound` | Not found         | -           |
+| `/users`           | `PageUsers`    | All users         | -           |
+| `/users/:username` | `PageUser`     | Single user info  | -           |
+| `/items`           | `PageItems`    | All items         | -           |
+| `/items/:slug`     | `PageItem`     | Single item info  | -           |
+| `/images`          | `PageImages`   | All images        | -           |
+| `/images/:slug`    | `PageImage`    | Single image info | -           |
+| `/login`           | `PageLogin`    | Login user        | -           |
+| `/logout`          | `PageLogout`   | Logout user       | -           |
 
 ## API Endpoints
 
@@ -134,17 +165,7 @@ Endpoints are configured using Express middlewares. Each of them could configure
   "name": "M Haidar Hanif",
   "username": "mhaidarhanif",
   "email": "name@example.com",
-  "bio": "Educator, Engineer, Explorer. Write everything education and tech.",
-  "links": [
-    {
-      "title": "Website",
-      "url": "https://mhaidarhanif.com"
-    },
-    {
-      "title": "Twitter",
-      "url": "https://twitter.com"
-    }
-  ]
+  "bio": "Educator, Engineer, Explorer. Write everything education and tech."
 }
 ```
 
@@ -155,7 +176,11 @@ Endpoints are configured using Express middlewares. Each of them could configure
   "id": 0,
   "_id": "abc",
   "createdAt": "",
-  "updatedAt": ""
+  "updatedAt": "",
+  "slug": "iron-man-suit",
+  "imageUrl": "images/iron-man-suit.jpg",
+  "title": "Iron Man Suit",
+  "html": "<p><a href='/ironman'>Tony Stark</a>'s Iron Man suits are ...</p>"
 }
 ```
 

@@ -18,7 +18,7 @@
 
 ## Links
 
-Access to the production version of the applications with their corresponding repositories:
+The production applications with their corresponding repositories:
 
 - [Template Web](https://template.azobu.com)
   - [`template-web`](https://github.com/azobu-projects/template-web)
@@ -27,11 +27,13 @@ Access to the production version of the applications with their corresponding re
 - (Later) Template Android
 - (Later) Template iOS
 
-Other things such as documentation and design:
+Documentation and design:
 
-- [Template Spec](SPECIFICATIONS.md)
-- [Template Design](https://figma.com/file/gyEXMrNXwVEBfdrSkJlJYV/Template?node-id=450%3A2)
-- [Template Prototype](https://figma.com/proto/gyEXMrNXwVEBfdrSkJlJYV/Template?node-id=452%3A2&scaling=min-zoom)
+- [Template Spec](SPECIFICATIONS.md) (Markdown)
+- [Template Ideation]() (Miro)
+- [Template Sitemap]() (Whimsical)
+- [Template Design](https://figma.com/file/gyEXMrNXwVEBfdrSkJlJYV/Template?node-id=450%3A2) (Figma)
+- [Template Prototype](https://figma.com/proto/gyEXMrNXwVEBfdrSkJlJYV/Template?node-id=452%3A2&scaling=min-zoom) (Figma)
 
 Ultimately this base application can be adapted into other sites and apps:
 
@@ -47,7 +49,9 @@ Ultimately this base application can be adapted into other sites and apps:
 
 ## Inspirations
 
-Template project is inspired by:
+The main reason Template is built is because there are tons of template and boilerplate out there, but they are often not complete. Also we don't find which suit the needs of our projects and products, which has more requirements than them. Other than that, it's mostly for learning purpose.
+
+The technical side of Template is inspired by:
 
 - [Material Design Kit](https://materialdesignkit.com)
 - [RealWorld.io](https://github.com/gothinkster/realworld)
@@ -55,10 +59,19 @@ Template project is inspired by:
   - [`node-express-realworld`](https://github.com/gothinkster/node-express-realworld-example-app)
 - [React.js Boilerplate](https://reactboilerplate.com)
 - [Express application generator](https://expressjs.com/en/starter/generator.html)
+- and other related repos
 
-Instead of taking different programming ecosystem at once, Template is made to be highly opiniated for just around JavaScript and Node.js because the main goal is to be a quick starter kit for new professional developers.
+They're great, but not as we expected:
 
-> 🚧 TypeScript and Deno might be later
+- No complete process from ideation and design to implementation of frontend and backend.
+- Might be too little or too big for a starter kit.
+- Some of the important development tools are not setup.
+- Missing practices on various configuration, integration, and deployment.
+- Often too slow to build.
+
+Then instead of taking different programming languages at once, Template is made to be highly opiniated for just around JavaScript and Node.js ecosystem. Because the main goal is to be a quick starter kit for **new** professional developers, especially who we teach frequently.
+
+> 🚧 TypeScript and Deno might come later
 
 ## Features
 
@@ -68,7 +81,8 @@ Instead of taking different programming ecosystem at once, Template is made to b
   - Focused on JavaScript, Node.js, React, and Express ecosystem
   - Later possible with TypeScript too
 - Simple and good-looking user interface (UI) and quick user experience (UX)
-  - Powered by Figma, React, React Router, Redux, and CSS-in-JS
+  - Design powered by Miro, Whimsical, Figma
+  - Code powered by React, React Router, Redux, and CSS-in-JS
   - Albeit the opiniated specification, Template make the best use of good end-user experience
   - Adapting inspirations from apps like Google, Twitter, Instagram, Medium, and Airbnb
 - Encouraged with popular best practices and recommendations
