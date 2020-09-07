@@ -29,11 +29,11 @@ The production applications with their corresponding repositories:
 
 Documentation and design:
 
-- [Template Spec](SPECIFICATIONS.md) (Markdown)
-- [Template Ideation]() (Miro)
-- [Template Sitemap]() (Whimsical)
-- [Template Design](https://figma.com/file/gyEXMrNXwVEBfdrSkJlJYV/Template?node-id=450%3A2) (Figma)
-- [Template Prototype](https://figma.com/proto/gyEXMrNXwVEBfdrSkJlJYV/Template?node-id=452%3A2&scaling=min-zoom) (Figma)
+- [Template Specifications](SPECIFICATIONS.md) (Markdown)
+- [Template Ideation](https://miro.com/app/board/o9J_kmcKK1M=/) (Miro)
+- [Template Web Sitemap](https://whimsical.com/UJymQjk4q72BcpWYLnJ3ZB) (Whimsical)
+- [Template Web Design](https://figma.com/file/gyEXMrNXwVEBfdrSkJlJYV/Template?node-id=450%3A2) (Figma)
+- [Template Web Prototype](https://figma.com/proto/gyEXMrNXwVEBfdrSkJlJYV/Template?node-id=452%3A2&scaling=min-zoom) (Figma)
 
 Ultimately this base application can be adapted into other sites and apps:
 
@@ -69,7 +69,7 @@ They're great, but not as we expected:
 - Missing practices on various configuration, integration, and deployment.
 - Often too slow to build.
 
-Then instead of taking different programming languages at once, Template is made to be highly opiniated for just around JavaScript and Node.js ecosystem. Because the main goal is to be a quick starter kit for **new** professional developers, especially who we teach frequently.
+Then instead of taking different programming languages at once, Template is made to be highly opiniated for just around JavaScript and Node.js ecosystem. Because the main goal is to be a quick starter kit for **new** professional developers, especially who we teach frequently in [Azobu](https://azobu.com).
 
 > 🚧 TypeScript and Deno might come later
 
@@ -176,6 +176,8 @@ Some stack alternatives are listed in each repository's documentation.
 - Offline-first mode powered by Progressive Web App (PWA) approach
 - Role-based access control (RBAC)
   - Powered by CASL
+- Alternative on REST API with query language
+  - Powered by GraphQL API and Prisma
 - Consultation with the developers
 - Explanation with videos
 
