@@ -20,15 +20,21 @@ Each resources are connected to data model or layer using ORM (Object-Relational
 
 The request and response object should set `Content-Type` as `application/json`. Some request set `Content-Type` as `multipart/form-data` when uploading file(s).
 
-Each endpoint has:
+Each endpoint contains:
 
-- Path: Relative path to the endpoint
-- Method: HTTP methods (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`)
-- Description: Brief explanation
-- Params: `/:params`
-- Query: `/path?query=value`
-- Headers: HTTP headers (`Content-Type`, `Authorization`)
-- Available: Whether the API already or should be implemented in Template API
+- **Path**: Relative path to the endpoint
+- **Method**: HTTP methods (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`)
+- **Description**: Brief explanation
+- **Params**: `/:params`
+- **Query**: `/path?query=value`
+- **Headers**: HTTP headers (`Content-Type`, `Authorization`)
+- **Available**: Whether the API already or should be implemented in Template API
+
+Each object structure contains:
+
+- **Field**: Property or object key
+- **Type**: Data types (`string`, `number`, `boolean`, `object`, `datetime`)
+- **Description**: What kind of values
 
 ## Common [🔝](#template-api-specifications)
 
@@ -189,10 +195,11 @@ Resources for managing uploaded images.
 
 Endpoints:
 
-| Path             | Method | Description      | Params | Query | Headers         | Available?  |
-| ---------------- | ------ | ---------------- | ------ | ----- | --------------- | ----------- |
-| `/images`        | `GET`  | Get all images   | -      | -     | -               | -           |
-| `/images/upload` | `POST` | Upload new image | -      | -     | `Authorization` | `available` |
+| Path             | Method   | Description       | Params | Query | Headers         | Available?  |
+| ---------------- | -------- | ----------------- | ------ | ----- | --------------- | ----------- |
+| `/images`        | `GET`    | Get all images    | -      | -     | `X-API-Key`     | -           |
+| `/images/upload` | `POST`   | Upload new image  | -      | -     | `Authorization` | `available` |
+| `/items`         | `DELETE` | Delete all images | -      | -     | `X-API-Key`     | -           |
 
 Supported image content types:
 
@@ -205,7 +212,6 @@ Object structure:
 - `name`: Just the file name with extension
 - `url`: Complete URL to the asset
 - `path`: Relative path to the disk or file system (if any)
-- `title`
 
 Object data:
 
