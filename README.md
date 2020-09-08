@@ -8,15 +8,15 @@
 
 ## Table of Contents
 
-- [🌐 Links](#-links)
-- [🏆 Use Cases](#-use-cases)
-- [💡 Inspirations](#-inspirations)
-- [📚 Features](#-features)
-- [🎨 Designs](#-designs)
-- [👤 Authors](#-authors)
-- [🤝 Contribution](#-contribution)
-- [🎁 Support](#-support)
-- [📝 License](#license)
+- [🌐 Links](#-links-)
+- [🏆 Use Cases](#-use-cases-)
+- [💡 Inspirations](#-inspirations-)
+- [📚 Features](#-features-)
+- [🎨 Designs](#-designs-)
+- [👤 Authors](#-authors-)
+- [🤝 Contribution](#-contribution-)
+- [🎁 Support](#-support-)
+- [📝 License](#license-)
 
 ## 🌐 Links [🔝](#-template)
 
@@ -50,7 +50,7 @@ Ultimately this base application can be adapted into other sites and apps:
 - 👋 [Jankenpon](https://jankenpon.azobu.com) rock-paper-scissors game
 - [and much more](https://azobu.com/projects)
 
-## 🏆 Use Cases
+## 🏆 Use Cases [🔝](#-template)
 
 - Main contents
   - View home page content
@@ -78,7 +78,7 @@ Ultimately this base application can be adapted into other sites and apps:
   - Toggle color mode (default and dark)
   - Switch between register and login from each page
 
-## 💡 Inspirations ([🔝](#-template))
+## 💡 Inspirations [🔝](#-template)
 
 The main reason Template is built is because there are tons of template and boilerplate out there, but they are often not complete. Also we don't find which suit the needs of our projects and products, which has more requirements than them. Other than that, it's mostly for learning purpose.
 
@@ -103,7 +103,7 @@ They're great, but not as we expected:
 
 Then instead of taking different programming languages at once, Template is made to be highly opiniated for just around JavaScript and Node.js ecosystem. Because the main goal is to be a quick starter kit for **new** professional developers, especially who we teach frequently in [Azobu](https://azobu.com).
 
-## 📚 Features
+## 📚 Features [🔝](#-template)
 
 ### Current Features
 
@@ -189,7 +189,7 @@ Then instead of taking different programming languages at once, Template is made
 
 Some stack alternatives are listed in each repository's documentation.
 
-### Later Features
+### Later Features [🔝](#-template)
 
 - Automated test suite with end-to-end test, integration test, unit test, and test coverage
   - Powered by Cypress, Jest, Sinon, React Testing Library, and `supertest`/`supertest-fetch`
@@ -212,7 +212,7 @@ Some stack alternatives are listed in each repository's documentation.
 - Consultation with the developers
 - Explanation with videos
 
-## 🎨 Designs
+## 🎨 Designs [🔝](#-template)
 
 | Name           | Screenshots                                  |
 | -------------- | -------------------------------------------- |
@@ -229,19 +229,19 @@ Some stack alternatives are listed in each repository's documentation.
 | User Settings  | ![](screenshots/template-user-settings.jpg)  |
 | Logout         | ![](screenshots/template-logout.jpg)         |
 
-## 👤 Authors
+## 👤 Authors [🔝](#-template)
 
 - [M Haidar Hanif](https://mhaidarhanif.com) ([@mhaidarh](https://github.com/mhaidarh))
 - [Azobu Team](https://azobu.com) ([@azobu](https://github.com/azobu))
 
-## 🤝 Contribution
+## 🤝 Contribution [🔝](#-template)
 
 Contributions, issues, and feature requests are welcome!
 
-## 🎁 Support
+## 🎁 Support [🔝](#-template)
 
 Give a ⭐️ if this project helped or inspired you!
 
-## 📝 License
+## 📝 License [🔝](#-template)
 
 See [LICENSE](./LICENSE)
