@@ -8,15 +8,17 @@
 
 ## Table of Contents
 
-- [Links](#links)
-- [Use Cases](#use-cases)
-- [Inspirations](#inspirations)
-- [Features](#features)
-- [Designs](#designs)
-- [Authors](#authors)
-- [License](#license)
+- [🌐 Links](#-links)
+- [🏆 Use Cases](#-use-cases)
+- [💡 Inspirations](#-inspirations)
+- [📚 Features](#-features)
+- [🎨 Designs](#-designs)
+- [👤 Authors](#-authors)
+- [🤝 Contribution](#-contribution)
+- [🎁 Support](#-support)
+- [📝 License](#license)
 
-## Links
+## 🌐 Links
 
 The production applications with their corresponding repositories:
 
@@ -48,7 +50,7 @@ Ultimately this base application can be adapted into other sites and apps:
 - 👋 [Jankenpon](https://jankenpon.azobu.com) rock-paper-scissors game
 - [and much more](https://azobu.com/projects)
 
-## Use Cases
+## 🏆 Use Cases
 
 - Main contents
   - View home page content
@@ -101,7 +103,7 @@ They're great, but not as we expected:
 
 Then instead of taking different programming languages at once, Template is made to be highly opiniated for just around JavaScript and Node.js ecosystem. Because the main goal is to be a quick starter kit for **new** professional developers, especially who we teach frequently in [Azobu](https://azobu.com).
 
-## Features
+## 📚 Features
 
 ### Current Features
 
@@ -210,7 +212,7 @@ Some stack alternatives are listed in each repository's documentation.
 - Consultation with the developers
 - Explanation with videos
 
-## Designs
+## 🎨 Designs
 
 | Name           | Screenshots                                  |
 | -------------- | -------------------------------------------- |
@@ -227,11 +229,19 @@ Some stack alternatives are listed in each repository's documentation.
 | User Settings  | ![](screenshots/template-user-settings.jpg)  |
 | Logout         | ![](screenshots/template-logout.jpg)         |
 
-## Authors
+## 👤 Authors
 
 - [M Haidar Hanif](https://mhaidarhanif.com) ([@mhaidarh](https://github.com/mhaidarh))
 - [Azobu Team](https://azobu.com) ([@azobu](https://github.com/azobu))
 
-## License
+## 🤝 Contribution
+
+Contributions, issues, and feature requests are welcome!
+
+## 🎁 Support
+
+Give a ⭐️ if this project helped or inspired you!
+
+## 📝 License
 
 See [LICENSE](./LICENSE)
