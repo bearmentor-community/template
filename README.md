@@ -18,7 +18,7 @@
 - [🎁 Support](#-support)
 - [📝 License](#license)
 
-## 🌐 Links
+## 🌐 Links [🔝](#-template)
 
 The production applications with their corresponding repositories:
 
@@ -78,7 +78,7 @@ Ultimately this base application can be adapted into other sites and apps:
   - Toggle color mode (default and dark)
   - Switch between register and login from each page
 
-## Inspirations
+## 💡 Inspirations ([🔝](#-template))
 
 The main reason Template is built is because there are tons of template and boilerplate out there, but they are often not complete. Also we don't find which suit the needs of our projects and products, which has more requirements than them. Other than that, it's mostly for learning purpose.
 
