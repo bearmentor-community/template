@@ -1,14 +1,13 @@
-# ⭕ [Template](https://template.azobu.com)
+# ⭕ Template
 
-> [Template](https://github.com/azobu-projects/template) is a quick starter kit project to build a complete web app and API with highly opiniated technologies and structure around JavaScript ecosystem.
+> [Template](https://template.azobu.com) is a quick starter kit project to build a complete web app and API with highly opiniated technologies and structure around JavaScript ecosystem.
 
-| Web                                                                 | API                                                                    |
-| ------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+|                            Template Web                             |                              Template API                              |
+| :-----------------------------------------------------------------: | :--------------------------------------------------------------------: |
 | [![Web](screenshots/template-home.jpg)](https://template.azobu.com) | [![API](screenshots/template-api.jpg)](<(https://template.azobu.com)>) |
 
 ## Table of Contents
 
-- Introduction
 - [Links](#links)
 - [Inspirations](#inspirations)
 - [Features](#features)
@@ -29,7 +28,8 @@ The production applications with their corresponding repositories:
 
 Documentation and design:
 
-- [Template Specifications](SPECIFICATIONS.md) (Markdown)
+- [Template Specifications for Web](specifications-web.md) (Markdown)
+- [Template Specifications for API](specifications-api.md) (Markdown)
 - [Template Ideation](https://miro.com/app/board/o9J_kmcKK1M=/) (Miro)
 - [Template Web Sitemap](https://whimsical.com/UJymQjk4q72BcpWYLnJ3ZB) (Whimsical)
 - [Template Web Design](https://figma.com/file/gyEXMrNXwVEBfdrSkJlJYV/Template?node-id=450%3A2) (Figma)
@@ -46,6 +46,50 @@ Ultimately this base application can be adapted into other sites and apps:
 - 🪐 [Planetary](https://planetary.azobu.com) job board
 - 👋 [Jankenpon](https://jankenpon.azobu.com) rock-paper-scissors game
 - [and much more](https://azobu.com/projects)
+
+## Use Cases
+
+- Main contents
+  - View home page content
+  - View about page content
+  - View all users
+  - View user profile
+  - View all items
+  - View item detail
+  - Search items with keyword
+- Authentication and authorization
+  - Register new user with name, username, email, and password
+  - Login to user with email and password
+  - Logout from logged in user with confirmation
+  - Request to reset password using email
+- User account
+  - Update user settings to change name, username, and bio
+  - Upload new profile picture or avatar
+  - Delete user account
+  - Post new item
+- Development mode
+  - Not found page
+  - Upload single file or multiple files
+  - Debug JSON data from API, for use of Redux and Redux Thunk
+- Utilities
+  - Toggle color mode (default and dark)
+  - Switch between register and login from each page
+
+## Tech Stack
+
+- Markdown
+- Miro, Whimsical, Figma
+- HTML, CSS, JavaScript
+- Node.js
+- React
+- Redux
+- Express
+- MongoDB
+- PostgreSQL
+- Nginx
+- PM2
+
+> 🚧 TypeScript and Deno might come later
 
 ## Inspirations
 
@@ -64,8 +108,9 @@ The technical side of Template is inspired by:
 They're great, but not as we expected:
 
 - No complete process from ideation and design to implementation of frontend and backend.
+- The design is not simple or outdated.
 - Might be too little or too big for a starter kit.
-- Some of the important development tools are not setup.
+- Some of the important development and deployment tools are not there.
 - Missing practices on various configuration, integration, and deployment.
 - Often too slow to build.
 
