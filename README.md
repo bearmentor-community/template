@@ -9,6 +9,7 @@
 ## Table of Contents
 
 - [Links](#links)
+- [Use Cases](#use-cases)
 - [Inspirations](#inspirations)
 - [Features](#features)
 - [Designs](#designs)
@@ -75,22 +76,6 @@ Ultimately this base application can be adapted into other sites and apps:
   - Toggle color mode (default and dark)
   - Switch between register and login from each page
 
-## Tech Stack
-
-- Markdown
-- Miro, Whimsical, Figma
-- HTML, CSS, JavaScript
-- Node.js
-- React
-- Redux
-- Express
-- MongoDB
-- PostgreSQL
-- Nginx
-- PM2
-
-> 🚧 TypeScript and Deno might come later
-
 ## Inspirations
 
 The main reason Template is built is because there are tons of template and boilerplate out there, but they are often not complete. Also we don't find which suit the needs of our projects and products, which has more requirements than them. Other than that, it's mostly for learning purpose.
@@ -116,8 +101,6 @@ They're great, but not as we expected:
 
 Then instead of taking different programming languages at once, Template is made to be highly opiniated for just around JavaScript and Node.js ecosystem. Because the main goal is to be a quick starter kit for **new** professional developers, especially who we teach frequently in [Azobu](https://azobu.com).
 
-> 🚧 TypeScript and Deno might come later
-
 ## Features
 
 ### Current Features
@@ -126,9 +109,10 @@ Then instead of taking different programming languages at once, Template is made
   - Focused on JavaScript, Node.js, React, and Express ecosystem
   - Later possible with TypeScript too
 - Simple and good-looking user interface (UI) and quick user experience (UX)
-  - Design powered by Miro, Whimsical, Figma
-  - Code powered by React, React Router, Redux, and CSS-in-JS
-  - Albeit the opiniated specification, Template make the best use of good end-user experience
+  - Ideation powered by Miro and Whimsical
+  - Design powered by Figma
+  - Code powered by React, React Router, Redux, and CSS-in-JS (`xstyled` and `emotion`)
+  - Albeit the opiniated specification, Template want to enable good end-user experience
   - Adapting inspirations from apps like Google, Twitter, Instagram, Medium, and Airbnb
 - Encouraged with popular best practices and recommendations
   - Intuitive React Redux structure
@@ -181,7 +165,7 @@ Then instead of taking different programming languages at once, Template is made
 - Multi environment configurations and variables for development, test, and production
   - Powered by React Scripts and `dotenv-flow` to manage `.env` files
 - Helpful analytical data tracking
-  - Powered by Google Analytics and React-GA
+  - Powered by Google Analytics and `React-GA`
 - Vibrant utilities for various case of other features:
   - `dayjs` date parser on `datetime`
   - Image or component lazy loader on `img`
