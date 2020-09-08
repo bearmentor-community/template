@@ -6,12 +6,12 @@ The resources and endpoints are configured using Express middlewares. CORS (Cros
 
 Available resources:
 
-- [Common](#common)
-- [Auth](#auth)
-- [Users](#users)
-- [Items](#items)
-- [Images](#images)
-- [Search](#search)
+- [Common](#common-)
+- [Auth](#auth-)
+- [Users](#users-)
+- [Items](#items-)
+- [Images](#images-)
+- [Search](#search-)
 
 Each resources are connected to data model or layer using ORM (Object-Relational Mapper) or ODM (Object Document Mapper):
 
@@ -30,7 +30,7 @@ Each endpoint has:
 - Headers: HTTP headers (`Content-Type`, `Authorization`)
 - Available: Whether the API already or should be implemented in Template API
 
-## Common
+## Common [🔝](#template-api-specifications)
 
 Resources for commonly used data and special functions.
 
@@ -63,7 +63,7 @@ Object data:
 }
 ```
 
-## Auth
+## Auth [🔝](#template-api-specifications)
 
 Resources for authentication and authorization that includes registration, login, logout, and get authenticated user profile.
 
@@ -96,7 +96,7 @@ Object data:
 }
 ```
 
-## Users
+## Users [🔝](#template-api-specifications)
 
 Resources for managing users.
 
@@ -145,7 +145,7 @@ Object data:
 }
 ```
 
-## Items
+## Items [🔝](#template-api-specifications)
 
 Resources for managing items.
 
@@ -182,7 +182,7 @@ Object data:
 }
 ```
 
-## Images
+## Images [🔝](#template-api-specifications)
 
 Resources for managing uploaded images.
 
@@ -220,7 +220,7 @@ Object data:
 }
 ```
 
-## Search
+## Search [🔝](#template-api-specifications)
 
 Resources for searching other resources.
 

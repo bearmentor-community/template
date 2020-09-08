@@ -138,6 +138,7 @@ Then instead of taking different programming languages at once, Template is made
 - Flexible customizable interface with color theme, especially dark mode
   - Powered by `styled-system`, `xstyled`, and `emotion`
   - Not using premade design such as Bootstrap or Material Design
+  - Not using CSS utilities such as Tailwind
 - Better debugging experience for global app state and local form state
   - Powered by Redux Logger, Redux DevTools Extension, and React Hook Form
   - (Alternative) Formik or React Final Form
