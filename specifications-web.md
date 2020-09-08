@@ -1,8 +1,8 @@
 # Template Web Specifications
 
-Web pages are configured using React Router and integrated into Redux with Connected React Router.
+> For specific documentation, visit [azobu-projects/template-web](https://github.com/azobu-projects/template-web).
 
-The designs are
+The web pages are configured using React Router and integrated into Redux with Connected React Router.
 
 ## Public Pages
 

@@ -1,5 +1,7 @@
 # Template API Specifications
 
+> For specific documentation, visit [azobu-projects/template-api](https://github.com/azobu-projects/template-api).
+
 The resources and endpoints are configured using Express middlewares. CORS (Cross-Origin Resource Sharing) is enabled because the web and API run on a different host and port.
 
 Available resources:
