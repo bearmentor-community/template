@@ -102,16 +102,16 @@ Resources for managing users.
 
 Endpoints:
 
-| Path                  | Method   | Description                | Params     | Query | Headers     | Available?  |
-| --------------------- | -------- | -------------------------- | ---------- | ----- | ----------- | ----------- |
-| `/users`              | `GET`    | Get all users              | -          | -     | -           | `available` |
-| `/users/seed`         | `POST`   | Seed initial users         | -          | -     | `X-API-Key` | `available` |
-| `/users/count`        | `GET`    | Get count of all users     | -          | -     | -           | `available` |
-| `/users/:username`    | `GET`    | Get user by username       | `username` | -     | -           | `available` |
-| `/users/:id/settings` | `GET`    | Get user settings by id    | `id`       | -     | -           | `available` |
-| `/users/:id/settings` | `PUT`    | Update user settings by id | `id`       | -     | -           | `available` |
-| `/users`              | `DELETE` | Delete all users           | -          | -     | -           | `available` |
-| `/users/:id`          | `DELETE` | Delete user by id          | `id`       | -     | -           | `available` |
+| Path                  | Method   | Description                | Params     | Query | Headers         | Available?  |
+| --------------------- | -------- | -------------------------- | ---------- | ----- | --------------- | ----------- |
+| `/users`              | `GET`    | Get all users              | -          | -     | -               | `available` |
+| `/users/seed`         | `POST`   | Seed initial users         | -          | -     | `X-API-Key`     | `available` |
+| `/users/count`        | `GET`    | Get count of all users     | -          | -     | -               | `available` |
+| `/users/:username`    | `GET`    | Get user by username       | `username` | -     | -               | `available` |
+| `/users/:id/settings` | `GET`    | Get user settings by id    | `id`       | -     | `Authorization` | `available` |
+| `/users/:id/settings` | `PUT`    | Update user settings by id | `id`       | -     | `Authorization` | `available` |
+| `/users`              | `DELETE` | Delete all users           | -          | -     | `X-API-Key`     | `available` |
+| `/users/:id`          | `DELETE` | Delete user by id          | `id`       | -     | `Authorization` | `available` |
 
 Object structure:
 
@@ -151,12 +151,13 @@ Resources for managing items.
 
 Endpoints:
 
-| Path           | Method   | Description        | Params | Query | Headers     | Available?  |
-| -------------- | -------- | ------------------ | ------ | ----- | ----------- | ----------- |
-| `/items`       | `GET`    | Get all items      | -      | -     | -           | `available` |
-| `/items/seed`  | `POST`   | Seed initial items | -      | -     | `X-API-Key` | `available` |
-| `/items/:slug` | `GET`    | Get item by slug   | `slug` | -     | -           | `available` |
-| `/items`       | `DELETE` | Delete all items   | -      | -     | -           | `available` |
+| Path           | Method   | Description        | Params | Query | Headers         | Available?  |
+| -------------- | -------- | ------------------ | ------ | ----- | --------------- | ----------- |
+| `/items`       | `GET`    | Get all items      | -      | -     | -               | `available` |
+| `/items/seed`  | `POST`   | Seed initial items | -      | -     | `X-API-Key`     | `available` |
+| `/items/:slug` | `GET`    | Get item by slug   | `slug` | -     | -               | `available` |
+| `/items`       | `DELETE` | Delete all items   | -      | -     | `X-API-Key`     | `available` |
+| `/users/:id`   | `DELETE` | Delete item by id  | `id`   | -     | `Authorization` | `available` |
 
 Object structure:
 
