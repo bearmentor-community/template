@@ -4,7 +4,8 @@
 
 |                            Template Web                             |                              Template API                              |
 | :-----------------------------------------------------------------: | :--------------------------------------------------------------------: |
-| [![Web](screenshots/template-home.jpg)](https://template.azobu.com) | [![API](screenshots/template-api.jpg)](<(https://template.azobu.com)>) |
+| [![Web](screenshots/template-home.jpg)](https://template.azobu.com) | [![API](screenshots/template-api.jpg)](https://api.template.azobu.com) |
+|          [template.azobu.com](https://template.azobu.com)           |        [api.template.azobu.com](https://api.template.azobu.com)        |
 
 ## Table of Contents
 
